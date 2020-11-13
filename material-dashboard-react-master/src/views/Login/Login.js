@@ -8,6 +8,8 @@ const useStyles = makeStyles(styles);
 export default function Dashboard() {
   return (
     <div>
+      Username: <input/>
+      Password: <input/>
           </div>
   );
 }
