@@ -96,7 +96,7 @@ export default function RTL({ ...rest }) {
     <div className={classes.wrapper}>
       <Sidebar
         routes={routes}
-        logoText={"الإبداعية تيم"}
+        logoText={"Creative Tim"}
         logo={logo}
         image={image}
         handleDrawerToggle={handleDrawerToggle}
