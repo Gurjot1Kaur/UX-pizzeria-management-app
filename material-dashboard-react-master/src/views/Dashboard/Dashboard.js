@@ -37,6 +37,7 @@ import {
 } from "variables/charts.js";
 
 import styles from "assets/jss/material-dashboard-react/views/dashboardStyle.js";
+import { ArrowDownward } from "@material-ui/icons";
 
 const useStyles = makeStyles(styles);
 
@@ -115,7 +116,7 @@ export default function Dashboard() {
                 <span className={classes.successText}>
                   <ArrowUpward className={classes.upArrowCardCategory} /> 55%
                 </span>{" "}
-                increase in today sales.
+                increase
               </p>
             </CardBody>
             <CardFooter chart>
@@ -139,7 +140,12 @@ export default function Dashboard() {
             </CardHeader>
             <CardBody>
               <h4 className={classes.cardTitle}>Deliveries</h4>
-              <p className={classes.cardCategory}>Number of deliveries in past year</p>
+              <p className={classes.cardCategory}>
+                <span className={classes.successText}>
+                  <ArrowUpward className={classes.upArrowCardCategory} /> 28%
+                </span>{" "}
+                increase
+              </p>
             </CardBody>
             <CardFooter chart>
               <div className={classes.stats}>
@@ -153,16 +159,21 @@ export default function Dashboard() {
             <CardHeader color="danger">
               <ChartistGraph
                 className="ct-chart"
-                data={emailsSubscriptionChart.data}
+                data={completedTasksChart.data}
                 type="Line"
-                options={emailsSubscriptionChart.options}
-                responsiveOptions={emailsSubscriptionChart.responsiveOptions}
-                listener={emailsSubscriptionChart.animation}
+                options={completedTasksChart.options}
+                responsiveOptions={completedTasksChart.responsiveOptions}
+                listener={completedTasksChart.animation}
               />
             </CardHeader>
             <CardBody>
               <h4 className={classes.cardTitle}>Dine-In</h4>
-              <p className={classes.cardCategory}>Number of dine in in past year</p>
+              <p className={classes.cardCategory}>
+                <span className={classes.dangerText}>
+                  <ArrowDownward className={classes.upArrowCardCategory} /> 5%
+                </span>{" "}
+                decrease
+              </p>
             </CardBody>
             <CardFooter chart>
               <div className={classes.stats}>
@@ -185,7 +196,12 @@ export default function Dashboard() {
             </CardHeader>
             <CardBody>
               <h4 className={classes.cardTitle}>Pick ups</h4>
-              <p className={classes.cardCategory}>Number of pick up order in in past year</p>
+              <p className={classes.cardCategory}>
+                <span className={classes.successText}>
+                  <ArrowUpward className={classes.upArrowCardCategory} /> 49%
+                </span>{" "}
+                increase
+              </p>
             </CardBody>
             <CardFooter chart>
               <div className={classes.stats}>
