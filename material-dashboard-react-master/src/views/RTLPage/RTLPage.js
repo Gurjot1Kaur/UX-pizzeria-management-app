@@ -44,19 +44,19 @@ import styles from "assets/jss/material-dashboard-react/views/rtlStyle.js";
 import avatar from "assets/img/faces/marc.jpg";
 
 let bugs = [
-  "طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن؟",
-  "	نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا به مشتری یا صاحب کار خود نشان دهند؟",
-  "همان حال کار آنها به نوعی وابسته به متن می‌باشد",
-  "	آنها با استفاده از محتویات ساختگی، صفحه گرافیکی خود را صفحه‌آرایی می‌کنند"
+  "Graphic designer of this text as an element of composition to fill?",
+  "Do they first use experimental and meaningless texts to show only to their client or employer?",
+  "At the same time, their work is somewhat text-dependent.",
+  "They use the dummy content to customize their graphic page."
 ];
 let website = [
-  "بعد از اینکه متن در آن قرار گیرد چگونه به نظر می‌رسد و قلم‌ها و اندازه‌بندی‌ها چگونه در نظر گرفته",
-  "اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید؟"
+  "What the text looks like after it is inserted and what the fonts and scales are like",
+  "Does it use the original appearance and general design of the ordered design?"
 ];
 let server = [
-  "گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی؟",
-  "از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی ؟",
-  "از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا به مشتری یا صاحب کار خود نشان دهند؟"
+  "Graphics indicate the type and size of the font and the appearance of the text. Usually graphic designers for page layouts, first of the experimental texts?",
+  "Uses this text as an element of composition to fill the page and present the initial appearance of the custom design, to graphically indicate the type and size of the font and the appearance of the text. Usually graphic designers for page layout, First of the experimental texts? ",
+  "Do they use nonsensical texts to show only to their client or employer?"
 ];
 
 const useStyles = makeStyles(styles);
@@ -72,7 +72,7 @@ export default function RTLPage() {
               <CardIcon color="warning">
                 <Icon>content_copy</Icon>
               </CardIcon>
-              <p className={classes.cardCategory}>فضا مصرف شده</p>
+              <p className={classes.cardCategory}>space consumed </p>
               <h3 className={classes.cardTitle}>
                 49/50 <small>GB</small>
               </h3>
@@ -83,7 +83,7 @@ export default function RTLPage() {
                   <Warning />
                 </Danger>
                 <a href="#pablo" onClick={e => e.preventDefault()}>
-                  فضای بیشتری داشته باشید...
+                  Have more space ...
                 </a>
               </div>
             </CardFooter>
@@ -95,13 +95,13 @@ export default function RTLPage() {
               <CardIcon color="success">
                 <Store />
               </CardIcon>
-              <p className={classes.cardCategory}>سود</p>
+              <p className={classes.cardCategory}>Profit</p>
               <h3 className={classes.cardTitle}>$34,245</h3>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
                 <DateRange />
-                ۲۴ ساعت اخیر
+                The last 24 hours
               </div>
             </CardFooter>
           </Card>
@@ -112,13 +112,13 @@ export default function RTLPage() {
               <CardIcon color="danger">
                 <Icon>info_outline</Icon>
               </CardIcon>
-              <p className={classes.cardCategory}>مشکلات حل شده</p>
+              <p className = {classes.cardCategory}> Problems Resolved </p>
               <h3 className={classes.cardTitle}>75</h3>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
                 <LocalOffer />
-                توسط گیت‌هاب
+                By Github
               </div>
             </CardFooter>
           </Card>
@@ -129,13 +129,13 @@ export default function RTLPage() {
               <CardIcon color="info">
                 <Accessibility />
               </CardIcon>
-              <p className={classes.cardCategory}>دنبال‌کننده</p>
+              <p className = {classes.cardCategory}> Follower </p>
               <h3 className={classes.cardTitle}>+245</h3>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
                 <Update />
-                هم‌اکنون
+                right now
               </div>
             </CardFooter>
           </Card>
@@ -154,17 +154,17 @@ export default function RTLPage() {
               />
             </CardHeader>
             <CardBody>
-              <h4 className={classes.cardTitle}>فروش روزانه</h4>
+              <h4 className = {classes.cardTitle}> Daily Sales </h4>
               <p className={classes.cardCategory}>
                 <span className={classes.successText}>
                   <ArrowUpward className={classes.upArrowCardCategory} /> 55%
                 </span>{" "}
-                رشد در فروش امروز.
+                Growth in sales today.
               </p>
             </CardBody>
             <CardFooter chart>
               <div className={classes.stats}>
-                <AccessTime /> ۴ دقیقه پیش
+              <AccessTime /> 4 minutes ago
               </div>
             </CardFooter>
           </Card>
@@ -182,12 +182,11 @@ export default function RTLPage() {
               />
             </CardHeader>
             <CardBody>
-              <h4 className={classes.cardTitle}>دنبال کننده‌های ایمیلی</h4>
-              <p className={classes.cardCategory}>کارایی آخرین کمپین</p>
-            </CardBody>
+              <h4 className = {classes.cardTitle}> Email Followers </h4>
+              <p className = {classes.cardCategory}> Last Campaign Performance </p>            </CardBody>
             <CardFooter chart>
               <div className={classes.stats}>
-                <AccessTime /> کمپین دو روز پیش ارسال شد
+                <AccessTime /> The campaign was launched two days ago
               </div>
             </CardFooter>
           </Card>
@@ -204,12 +203,12 @@ export default function RTLPage() {
               />
             </CardHeader>
             <CardBody>
-              <h4 className={classes.cardTitle}>وظایف انجام شده</h4>
-              <p className={classes.cardCategory}>کارایی آخرین کمپین</p>
+              <h4 className = {classes.cardTitle}> Tasks Done </h4>
+              <p className = {classes.cardCategory}> Last Campaign Performance </p>
             </CardBody>
             <CardFooter chart>
               <div className={classes.stats}>
-                <AccessTime /> کمپین دو روز پیش ارسال شد
+                <AccessTime /> The campaign was launched two days ago
               </div>
             </CardFooter>
           </Card>
@@ -218,12 +217,12 @@ export default function RTLPage() {
       <GridContainer>
         <GridItem xs={12} sm={12} md={6}>
           <CustomTabs
-            title="وظایف:"
+            title="Tasks"
             headerColor="primary"
             rtlActive
             tabs={[
               {
-                tabName: "باگ‌ها",
+                tabName: "Bug",
                 tabIcon: BugReport,
                 tabContent: (
                   <Tasks
@@ -235,7 +234,7 @@ export default function RTLPage() {
                 )
               },
               {
-                tabName: "وبسایت",
+                tabName: "Notes",
                 tabIcon: Code,
                 tabContent: (
                   <Tasks
@@ -247,7 +246,7 @@ export default function RTLPage() {
                 )
               },
               {
-                tabName: "سرور",
+                tabName: "Cloud",
                 tabIcon: Cloud,
                 tabContent: (
                   <Tasks
@@ -264,20 +263,20 @@ export default function RTLPage() {
         <GridItem xs={12} sm={12} md={6}>
           <Card>
             <CardHeader color="warning">
-              <h4 className={classes.cardTitleWhite}>آمار کارکنان</h4>
+              <h4 className = {classes.cardTitleWhite}> Staff Statistics </h4>
               <p className={classes.cardCategoryWhite}>
-                کارکنان جدید از ۱۵ آبان ۱۳۹۶
+                New employees from November 6, 2017
               </p>
             </CardHeader>
             <CardBody>
               <Table
                 tableHeaderColor="warning"
-                tableHead={["کد", "نام", "حقوق", "استان"]}
+                tableHead={["Notes", "Name", "Net Value", "City"]}
                 tableData={[
-                  ["1", "احمد حسینی	", "$36,738", "مازندران"],
-                  ["2", "مینا رضایی	", "$23,789", "گلستان"],
-                  ["3", "مبینا احمدپور	", "$56,142", "تهران"],
-                  ["4", "جلال آقایی	", "$38,735", "شهرکرد"]
+                  ["1", "Eric Chen", "$36,738", "Las Vegas"],
+                  ["2", "Gurjot Kaur", "$32,148", "Las Vegas"],
+                  ["3", "Terrence Townsend", "$23,218", "Las Vegas"],
+                  ["4", "Tommy Lee", "$54,438", "Las Vegas"],
                 ]}
               />
             </CardBody>
@@ -288,33 +287,33 @@ export default function RTLPage() {
         <GridItem xs={12} sm={12} md={6}>
           <Card>
             <CardHeader color="primary">
-              <h4 className={classes.cardTitleWhite}>اعلان ها</h4>
+              <h4 className={classes.cardTitleWhite}>Announcements </h4>
               <p className={classes.cardCategoryWhite}>
-                يدويا من قبل أصدقائنا من{" "}
+              Handmade by our friends from {" "}  
                 <a
                   target="_blank"
                   href="https://material-ui-next.com/?ref=creativetime"
                 >
-                  واجهة المستخدم المادية
+                Physical user interface
                 </a>{" "}
-                ونصب من قبل{" "}
+                And installed before {" "}
                 <a
                   target="_blank"
                   href="https://www.creative-tim.com/?ref=mdr-rtl-page"
                 >
-                  الإبداعية تيم
+                Creative Tim
                 </a>
-                . يرجى التحقق من{" "}
+                . Please check {" "}
                 <a href="#pablo" target="_blank">
-                  وثائق كاملة
-                </a>
+                Complete documentation
+               </a>
                 .
               </p>
             </CardHeader>
             <CardBody>
               <SnackbarContent
                 message={
-                  'این یک اعلان است که با کلاس color="warning" ایجاد شده است.'
+                  'This is a notification created with the color = "warning" class.'
                 }
                 close
                 rtlActive
@@ -322,14 +321,14 @@ export default function RTLPage() {
               />
               <SnackbarContent
                 message={
-                  'این یک اعلان است که با کلاس color="primary" ایجاد شده است.'
+                  'This is a notification created with the color = "primary" class.'                
                 }
                 close
                 rtlActive
                 color="primary"
               />
               <SnackbarContent
-                message={"این یک اعلان با دکمه بستن و آیکن است"}
+                message={"This is a notification with a close button and an icon"}
                 close
                 rtlActive
                 color="info"
@@ -345,17 +344,17 @@ export default function RTLPage() {
               </a>
             </CardAvatar>
             <CardBody profile>
-              <h6 className={classes.cardCategory}>مدیرعامل / مدیرفنی</h6>
-              <h4 className={classes.cardTitle}>خداداد عزیزی</h4>
+              <h6 className={classes.cardCategory}>Manager</h6>
+              <h4 className={classes.cardTitle}>John Doe</h4>
               <p className={classes.description}>
-                طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن
-                صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده
-                می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و
-                ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از
-                متن‌های آزمایشی و بی‌معنی استفاده می‌کنند ...
+              Graphics of this text as an element of composition to fill
+                 Page and initial presentation of the appearance and general design of the ordered design used
+                 To graphically indicate how the font type and size and
+                 The appearance of the text. Usually graphic designers for page layouts, from
+                 They use experimental and meaningless texts ...
               </p>
               <Button color="primary" round>
-                دنبال‌کردن
+                Following
               </Button>
             </CardBody>
           </Card>

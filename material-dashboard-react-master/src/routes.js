@@ -23,6 +23,7 @@ import BubbleChart from "@material-ui/icons/BubbleChart";
 import LocationOn from "@material-ui/icons/LocationOn";
 import Unarchive from "@material-ui/icons/Unarchive";
 import AddBoxIcon from '@material-ui/icons/AddBox';
+import GroupIcon from '@material-ui/icons/Group';
 // core components/views for Admin layout
 import DashboardPage from "views/Dashboard/Dashboard.js";
 import LoginPage from "views/Login/Login.js";
@@ -40,39 +41,40 @@ const dashboardRoutes = [
   {
     path: "/login",
     name: "Login",
-    rtlName: "لوحة القيادة",
-    icon: Dashboard,
+    rtlName: "Login",
+    icon: GroupIcon,
     component: LoginPage,
     layout: "/admin"
   },
   {
     path: "/dashboard",
     name: "Dashboard",
-    rtlName: "لوحة القيادة",
+    rtlName: "Dashboard",
     icon: Dashboard,
     component: DashboardPage,
     layout: "/admin"
   },
   {
-    path: "/user",
+    path: "/notifications",
     name: "View Order Status",
-    rtlName: "ملف تعريفي للمستخدم",
-    icon: Person,
-    component: UserProfile,
+    rtlName: "Order Status",
+    icon: AddBoxIcon,
+    component: NotificationsPage,
     layout: "/admin"
   },
   {
-    path: "/table",
+    path: "/rtl-page",
     name: "Order Analysis",
-    rtlName: "قائمة الجدول",
-    icon: "content_paste",
-    component: TableList,
-    layout: "/admin"
+    rtlName: "Order Analysis",
+    icon: Person,
+    component: RTLPage,
+    layout: "/rtl"
   },
+
   {
     path: "/typography",
     name: "Edit Menu",
-    rtlName: "طباعة",
+    rtlName: "Edit Menu",
     icon: MenuBookIcon,
     component: Typography,
     layout: "/admin"
@@ -80,7 +82,7 @@ const dashboardRoutes = [
   {
     path: "/icons",
     name: "Order History",
-    rtlName: "الرموز",
+    rtlName: "Order History",
     icon: BubbleChart,
     component: Icons,
     layout: "/admin"
@@ -88,31 +90,31 @@ const dashboardRoutes = [
   {
     path: "/maps",
     name: "Delivery Tracking",
-    rtlName: "خرائط",
+    rtlName: "Delivery Tracking",
     icon: LocationOn,
     component: Maps,
     layout: "/admin"
   },
   {
-    path: "/notifications",
+    path: "/user",
     name: "Create New Account",
-    rtlName: "إخطارات",
-    icon: AddBoxIcon,
-    component: NotificationsPage,
+    rtlName: "Create New Account",
+    icon: Person,
+    component: UserProfile,
     layout: "/admin"
   },
   {
-    path: "/rtl-page",
+    path: "/table",
     name: "Employee Look-Up",
-    rtlName: "پشتیبانی از راست به چپ",
-    icon: Person,
-    component: RTLPage,
-    layout: "/rtl"
+    rtlName: "Employee Look-Up",
+    icon: "content_paste",
+    component: TableList,
+    layout: "/admin"
   },
   {
     path: "/upgrade-to-pro",
-    name: "You are logged in as Manager!",
-    rtlName: "التطور للاحترافية",
+    name: "Upgrade to Pro version",
+    rtlName: "Upgrade",
     icon: Unarchive,
     component: UpgradeToPro,
     layout: "/admin"
