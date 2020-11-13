@@ -32,7 +32,6 @@ const switchRoutes = (
       }
       return null;
     })}
-    {/* <Redirect from="/admin" to="/admin/login" /> */}
   </Switch>
 );
 
@@ -99,7 +98,6 @@ export default function Admin({ ...rest }) {
         ) : (
           <div className={classes.map}>{switchRoutes}</div>
         )}
-        {getRoute() ? <Footer /> : null}
       </div>
     </div>
   );

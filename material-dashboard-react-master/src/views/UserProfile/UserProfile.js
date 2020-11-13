@@ -44,23 +44,10 @@ export default function UserProfile() {
         <GridItem xs={12} sm={12} md={8}>
           <Card>
             <CardHeader color="primary">
-              <h4 className={classes.cardTitleWhite}>Edit Profile</h4>
-              <p className={classes.cardCategoryWhite}>Complete your profile</p>
+              <h4 className={classes.cardTitleWhite}>Enter details for new account</h4>
             </CardHeader>
             <CardBody>
               <GridContainer>
-                <GridItem xs={12} sm={12} md={5}>
-                  <CustomInput
-                    labelText="Company (disabled)"
-                    id="company-disabled"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                    inputProps={{
-                      disabled: true
-                    }}
-                  />
-                </GridItem>
                 <GridItem xs={12} sm={12} md={3}>
                   <CustomInput
                     labelText="Username"
@@ -69,6 +56,7 @@ export default function UserProfile() {
                       fullWidth: true
                     }}
                   />
+                    
                 </GridItem>
                 <GridItem xs={12} sm={12} md={4}>
                   <CustomInput
@@ -147,7 +135,7 @@ export default function UserProfile() {
               </GridContainer>
             </CardBody>
             <CardFooter>
-              <Button color="primary">Update Profile</Button>
+              <Button color="primary">Create new account</Button>
             </CardFooter>
           </Card>
         </GridItem>
