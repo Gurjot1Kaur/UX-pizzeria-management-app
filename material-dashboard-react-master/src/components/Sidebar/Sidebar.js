@@ -31,7 +31,7 @@ export default function Sidebar(props) {
   function activeRoute(routeName) {
     return window.location.href.indexOf(routeName) > -1 ? true : false;
   }
-  const { color, logo, image, logoText, routes } = props;
+  const { color, image, logoText, routes } = props;
   var links = (
     <List className={classes.list}>
       {routes.map((prop, key) => {
@@ -86,22 +86,6 @@ export default function Sidebar(props) {
       })}
     </List>
   );
-  var brand = (
-    <div className={classes.logo}>
-      <a
-        href=""
-        className={classNames(classes.logoLink, {
-          [classes.logoLinkRTL]: props.rtlActive
-        })}
-        target="_blank"
-      >
-        <div className={classes.logoImage}>
-          <img src={logo} alt="logo" className={classes.img} />
-        </div>
-        {logoText}
-      </a>
-    </div>
-  );
   return (
     <div>
       <Hidden mdUp implementation="css">
@@ -119,7 +103,7 @@ export default function Sidebar(props) {
             keepMounted: true // Better open performance on mobile.
           }}
         >
-          {brand}
+
           <div className={classes.sidebarWrapper}>
             {links}
           </div>
@@ -141,7 +125,6 @@ export default function Sidebar(props) {
             })
           }}
         >
-          {brand}
           <Card>
             <CardHeader style={{color:"white"}}>
               <h3 className={classes.cardTitle}>Income: $94,245 </h3>
@@ -165,7 +148,6 @@ Sidebar.propTypes = {
   rtlActive: PropTypes.bool,
   handleDrawerToggle: PropTypes.func,
   bgColor: PropTypes.oneOf(["purple", "blue", "green", "orange", "red"]),
-  logo: PropTypes.string,
   image: PropTypes.string,
   logoText: PropTypes.string,
   routes: PropTypes.arrayOf(PropTypes.object),

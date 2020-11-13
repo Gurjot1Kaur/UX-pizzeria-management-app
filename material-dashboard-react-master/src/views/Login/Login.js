@@ -22,11 +22,16 @@ export default function Login() {
   const classes = useStyles();
 
   return (
-    <div styles={{align:"center"}}>
+    <div style={{marginLeft: "200px"}}>
+      <h4 >Pizzeria Management App Login</h4>
+
       <GridContainer >
+        
+              
         <GridItem xs={12} sm={12} md={8}>
+
               <GridContainer>
-                <GridItem xs={12} sm={12} md={3}>
+                <GridItem xs={12} sm={12} md={6}>
                   <CustomInput
                     labelText="Username"
                     id="username"
@@ -37,7 +42,7 @@ export default function Login() {
                 </GridItem>
               </GridContainer>
               <GridContainer>
-              <GridItem xs={12} sm={12} md={3}>
+              <GridItem xs={12} sm={12} md={6}>
                   <CustomInput
                     labelText="Password"
                     id="password"
@@ -49,13 +54,14 @@ export default function Login() {
               </GridContainer>
               <a href="/admin/dashboard"><Button>Login</Button></a>
         </GridItem>
+
       </GridContainer>
       <GridContainer >
         <Card></Card>
         <GridItem xs={12} sm={12} md={8}>
               <h4>Forgot password?</h4>
               <GridContainer>
-                <GridItem xs={12} sm={12} md={3}>
+                <GridItem xs={12} sm={12} md={6}>
                   <CustomInput
                     labelText="Email"
                     id="email"
