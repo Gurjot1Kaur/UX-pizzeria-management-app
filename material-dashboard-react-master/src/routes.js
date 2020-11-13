@@ -79,17 +79,17 @@ const dashboardRoutes = [
   },
   {
     path: "/icons",
-    name: "Delivery Tracking",
+    name: "Order History",
     rtlName: "الرموز",
-    icon: LocationOn,
+    icon: BubbleChart,
     component: Icons,
     layout: "/admin"
   },
   {
     path: "/maps",
-    name: "Order History",
+    name: "Delivery Tracking",
     rtlName: "خرائط",
-    icon: BubbleChart,
+    icon: LocationOn,
     component: Maps,
     layout: "/admin"
   },
