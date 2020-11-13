@@ -11,10 +11,16 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import Icon from "@material-ui/core/Icon";
-// core components
-import AdminNavbarLinks from "components/Navbars/AdminNavbarLinks.js";
-import RTLNavbarLinks from "components/Navbars/RTLNavbarLinks.js";
+import Store from "@material-ui/icons/Store";
+import DateRange from "@material-ui/icons/DateRange";
 
+// core components
+
+import Card from "components/Card/Card.js";
+import CardHeader from "components/Card/CardHeader.js";
+import CardIcon from "components/Card/CardIcon.js";
+import CardBody from "components/Card/CardBody.js";
+import CardFooter from "components/Card/CardFooter.js";
 import styles from "assets/jss/material-dashboard-react/components/sidebarStyle.js";
 
 const useStyles = makeStyles(styles);
@@ -83,7 +89,7 @@ export default function Sidebar(props) {
   var brand = (
     <div className={classes.logo}>
       <a
-        href="https://www.creative-tim.com?ref=mdr-sidebar"
+        href=""
         className={classNames(classes.logoLink, {
           [classes.logoLinkRTL]: props.rtlActive
         })}
@@ -101,7 +107,7 @@ export default function Sidebar(props) {
       <Hidden mdUp implementation="css">
         <Drawer
           variant="temporary"
-          anchor={props.rtlActive ? "left" : "right"}
+          anchor={ "left" }
           open={props.open}
           classes={{
             paper: classNames(classes.drawerPaper, {
@@ -115,15 +121,13 @@ export default function Sidebar(props) {
         >
           {brand}
           <div className={classes.sidebarWrapper}>
-            {props.rtlActive ? <RTLNavbarLinks /> : <AdminNavbarLinks />}
             {links}
           </div>
-          {image !== undefined ? (
             <div
               className={classes.background}
               style={{ backgroundImage: "url(" + image + ")" }}
             />
-          ) : null}
+         
         </Drawer>
       </Hidden>
       <Hidden smDown implementation="css">
@@ -138,6 +142,12 @@ export default function Sidebar(props) {
           }}
         >
           {brand}
+          <Card>
+            <CardHeader style={{color:"white"}}>
+              <h3 className={classes.cardTitle}>Income: $94,245 </h3>
+              <h3 className={classes.cardTitle}>Expense:$31,823</h3>
+            </CardHeader>
+          </Card>
           <div className={classes.sidebarWrapper}>{links}</div>
           {image !== undefined ? (
             <div

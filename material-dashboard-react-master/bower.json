@@ -1,10 +1,10 @@
 {
-  "name": "material-dashboard-react",
-  "homepage": "https://github.com/creativetimofficial/material-dashboard-react",
+  "name": "ux-pizzeria-app-react",
+  "homepage": "https://github.com/",
   "authors": [
-    "creative-tim"
+    "ux-team-10"
   ],
-  "description": "A Badass Material-UI Kit based on Material Design",
+  "description": "",
   "main": "public/index.html",
   "keywords": [
     "material",
@@ -15,7 +15,7 @@
     "google",
     "twitter"
   ],
-  "license": "Creative TIM License",
+  "license": "MIT License",
   "ignore": [
     "**/.*",
     "node_modules",
