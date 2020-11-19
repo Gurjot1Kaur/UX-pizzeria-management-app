@@ -20,9 +20,9 @@ import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
 
 import {
-  dailySalesChart,
-  emailsSubscriptionChart,
-  completedTasksChart
+  dailySalesChart as dummyData1,
+  emailsSubscriptionChart as dummyData2,
+  completedTasksChart as dummyData3
 } from "variables/charts.js";
 
 import styles from "assets/jss/material-dashboard-react/views/dashboardStyle.js";
@@ -52,6 +52,7 @@ export default function Dashboard() {
             </CardFooter>
           </Card>
         </GridItem>
+
         <GridItem xs={12} sm={12} md={4}>
           <Card>
             <CardHeader color="danger" stats icon>
@@ -69,6 +70,8 @@ export default function Dashboard() {
             </CardFooter>
           </Card>
         </GridItem>
+
+
         <GridItem xs={12} sm={12} md={4}>
           <Card>
             <CardHeader color="info" stats icon>
@@ -93,10 +96,10 @@ export default function Dashboard() {
             <CardHeader color="success">
               <ChartistGraph
                 className="ct-chart"
-                data={dailySalesChart.data}
+                data={dummyData1.data}
                 type="Line"
-                options={dailySalesChart.options}
-                listener={dailySalesChart.animation}
+                options={dummyData1.options}
+                listener={dummyData1.animation}
               />
             </CardHeader>
             <CardBody>
@@ -120,11 +123,11 @@ export default function Dashboard() {
             <CardHeader color="warning">
               <ChartistGraph
                 className="ct-chart"
-                data={emailsSubscriptionChart.data}
+                data={dummyData2.data}
                 type="Bar"
-                options={emailsSubscriptionChart.options}
-                responsiveOptions={emailsSubscriptionChart.responsiveOptions}
-                listener={emailsSubscriptionChart.animation}
+                options={dummyData2.options}
+                responsiveOptions={dummyData2.responsiveOptions}
+                listener={dummyData2.animation}
               />
             </CardHeader>
             <CardBody>
@@ -148,11 +151,11 @@ export default function Dashboard() {
             <CardHeader color="danger">
               <ChartistGraph
                 className="ct-chart"
-                data={completedTasksChart.data}
+                data={dummyData3.data}
                 type="Line"
-                options={completedTasksChart.options}
-                responsiveOptions={completedTasksChart.responsiveOptions}
-                listener={completedTasksChart.animation}
+                options={dummyData3.options}
+                responsiveOptions={dummyData3.responsiveOptions}
+                listener={dummyData3.animation}
               />
             </CardHeader>
             <CardBody>
@@ -176,11 +179,11 @@ export default function Dashboard() {
             <CardHeader color="info">
               <ChartistGraph
                 className="ct-chart"
-                data={emailsSubscriptionChart.data}
+                data={dummyData2.data}
                 type="Bar"
-                options={emailsSubscriptionChart.options}
-                responsiveOptions={emailsSubscriptionChart.responsiveOptions}
-                listener={emailsSubscriptionChart.animation}
+                options={dummyData2.options}
+                responsiveOptions={dummyData2.responsiveOptions}
+                listener={dummyData2.animation}
               />
             </CardHeader>
             <CardBody>

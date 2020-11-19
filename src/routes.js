@@ -7,7 +7,7 @@ import AddBoxIcon from '@material-ui/icons/AddBox';
 import ExitToApp from '@material-ui/icons/ExitToApp';
 import DashboardPage from "views/Dashboard/Dashboard.js";
 import LoginPage from "views/Login/Login.js";
-import UserProfile from "views/UserProfile/UserProfile.js";
+import CreateNewAccount from "views/CreateNewAccount/CreateNewAccount.js";
 import Maps from "views/Maps/Maps.js";
 import OrderStatus from "views/OrderStatus/OrderStatus";
 import OrderHistory from "views/OrderHistory/OrderHistory";
@@ -51,7 +51,7 @@ const dashboardRoutes = [
     name: "Create New Account",
     rtlName: "Create New Account",
     icon: Person,
-    component: UserProfile,
+    component: CreateNewAccount,
     layout: "/admin"
   },
   {

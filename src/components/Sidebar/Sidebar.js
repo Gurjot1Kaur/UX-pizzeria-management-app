@@ -135,7 +135,7 @@ export default function Sidebar(props) {
           {image !== undefined ? (
             <div
               className={classes.background}
-              style={{ backgroundImage: "url(" + image + ")" }}
+              style={{ backgroundColor: "rgba(211,211,211,0.2)" }}
             />
           ) : null}
         </Drawer>

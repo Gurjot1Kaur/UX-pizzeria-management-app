@@ -31,6 +31,9 @@ export default function Login() {
                     formControlProps={{
                       fullWidth: true
                     }}
+                    inputProps={{
+                      type: "password"
+                    }}
                   />
                 </GridItem>
               </GridContainer>
