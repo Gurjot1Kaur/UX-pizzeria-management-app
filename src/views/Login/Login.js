@@ -10,12 +10,8 @@ export default function Login() {
   return (
     <div style={{marginLeft: "200px"}}>
       <h4 >Pizzeria Management App Login</h4>
-
       <GridContainer >
-        
-              
         <GridItem xs={12} sm={12} md={8}>
-
               <GridContainer>
                 <GridItem xs={12} sm={12} md={6}>
                   <CustomInput
