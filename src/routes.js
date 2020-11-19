@@ -5,7 +5,6 @@ import BubbleChart from "@material-ui/icons/BubbleChart";
 import LocationOn from "@material-ui/icons/LocationOn";
 import AddBoxIcon from '@material-ui/icons/AddBox';
 import ExitToApp from '@material-ui/icons/ExitToApp';
-import GroupIcon from '@material-ui/icons/Group';
 import DashboardPage from "views/Dashboard/Dashboard.js";
 import LoginPage from "views/Login/Login.js";
 import UserProfile from "views/UserProfile/UserProfile.js";
